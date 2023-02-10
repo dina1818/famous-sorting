@@ -1,0 +1,39 @@
+alorithme checkpoint 
+FUNCTION insertion_dun_element_dans_tableau(array v: array of integer[100],pos,value) : integer
+VAR
+   i,
+BEGIN
+ if (pos<=0 || pos>taille+1)
+ else
+ FOR i FROM taille TO pos STEP -1  DO
+    {v[i]=v[i-1]}
+ END_FOR   
+ end if 
+ v[pos]=valeur;
+ taille++  ;
+END
+PROCEDURE affichage(array v: array of integer[100])
+VAR
+z:integer;
+BEGIN
+read("les elements du tableau")
+FOR z FROM 0 TO taille DO
+    write("lelement",z,"est",v[z]);
+END_FOR
+END
+VAR
+taille,N,h,z,j:integer
+BEGIN
+    write("entrer la taille du tableau");
+    read(taille);
+   FOR j FROM 0 TO taille DO
+      write("veuiller saisair un element du tableau");
+      read(v[j])
+   END_FOR
+  write("tirer la carte")
+   read(N) 
+    FOR h FROM 0 TO taille  DO
+ if (v[h]<=N)then pos(v,h+1,N)
+ else if (v[h]=>N)then pos(v,h-1,N)                                                                                                                                          
+   end if                                                                                                                                        
+    END_FOR
